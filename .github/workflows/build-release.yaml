@@ -29,7 +29,7 @@ jobs:
     environment: prod
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: qoollo-bobClient-nuget
           path: nuget
@@ -67,7 +67,7 @@ jobs:
     environment: prod
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: qoollo-bobClient-app-linux
           path: client-app-linux
@@ -109,7 +109,7 @@ jobs:
     environment: prod
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: qoollo-bobClient-app-windows
           path: client-app-windows
